@@ -2,7 +2,7 @@
 
 I took the NSGA-III optimizer from my [Senior Synthesis capstone](https://github.com/Kyler-Kasravi/nsga3-land-use-optimization) and applied it to real land: the redevelopable parcels around the Berryessa / North San Jose BART station.
 
-The question: given the same amount of housing, jobs, parks and public land as the City's General Plan, can the optimizer find layouts that do better on walking access and livability?
+I wanted to find if the optimizer was capable of performaing well on real plots of land, and if so, could it find layouts that do better on walking access and livability using my objective functions than the city's general plan?
 
 ![City plan vs. optimized layout](docs/berryessa_maps.png)
 
