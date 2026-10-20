@@ -1,0 +1,256 @@
+{
+  "full_seed7": {
+    "results": {
+      "grid_classes": {
+        "Existing housing": 1010,
+        "Existing park": 96,
+        "Existing school / public service": 2,
+        "Outside site (unchanged)": 703,
+        "Redevelopable site": 269,
+        "Road / rail / creek setback / floodway": 575
+      },
+      "manual_edit_cells": 0,
+      "pareto_solutions": 47,
+      "representatives": {
+        "balanced": {
+          "solution_id": 9,
+          "job_walk_ft": 2099.7,
+          "services_walk_ft": 2685.2,
+          "livability": 1174.3,
+          "new_homes_walk_to_bart_ft": 938.0,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 72,
+          "new_homes_in_noise_contour": 53,
+          "new_homes_in_flood_zone": 43,
+          "pct_homes_10min_park": 95.8
+        },
+        "best_job_commute": {
+          "solution_id": 23,
+          "job_walk_ft": 2080.5,
+          "services_walk_ft": 2512.7,
+          "livability": 1165.1,
+          "new_homes_walk_to_bart_ft": 1134.5,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 71,
+          "new_homes_in_noise_contour": 43,
+          "new_homes_in_flood_zone": 34,
+          "pct_homes_10min_park": 95.8
+        },
+        "best_livability": {
+          "solution_id": 26,
+          "job_walk_ft": 2087.8,
+          "services_walk_ft": 3040.0,
+          "livability": 1180.6,
+          "new_homes_walk_to_bart_ft": 1254.1,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 72,
+          "new_homes_in_noise_contour": 35,
+          "new_homes_in_flood_zone": 30,
+          "pct_homes_10min_park": 95.8
+        },
+        "best_transit_access": {
+          "solution_id": 6,
+          "job_walk_ft": 2099.5,
+          "services_walk_ft": 2685.9,
+          "livability": 1157.7,
+          "new_homes_walk_to_bart_ft": 860.7,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 73,
+          "new_homes_in_noise_contour": 59,
+          "new_homes_in_flood_zone": 46,
+          "pct_homes_10min_park": 95.8
+        }
+      },
+      "hypervolume_final": 0.939452,
+      "qa_counts": {
+        "GEOM_INVALID": 0,
+        "DUPLICATE_GEOM": 0,
+        "ROAD_UNDERSHOOT": 9,
+        "ROAD_DEAD_END": 68,
+        "CROSSING_NO_NODE": 0,
+        "MISSING_NAME": 7,
+        "NOT_IN_DICTIONARY": 1,
+        "LANDUSE_CONFLICT": 4,
+        "OSM_BUILDING_NO_PARCEL": 2,
+        "PARCEL_LANDUSE_MISMATCH": 1,
+        "STOP_NOT_IN_OSM": 1,
+        "STOP_NOT_IN_GTFS": 5,
+        "CREEK_OFFSET": 2,
+        "EDIT_INCOMPLETE": 0,
+        "EDIT_INVALID": 0,
+        "CELL_AMBIGUOUS": 20,
+        "ZONE_DOMAIN": 0,
+        "ZONE_OVERLAP": 0,
+        "ZONE_OUTSIDE_SITE": 0,
+        "SITE_GAP": 0,
+        "AREA_RECONCILE": 0,
+        "FOOTPRINT_ZONE": 0
+      },
+      "city_plan": {
+        "job_walk_ft": 2022.1,
+        "services_walk_ft": 2873.2,
+        "livability": 1138.8,
+        "new_homes_walk_to_bart_ft": 1627.7,
+        "new_home_cells": 75,
+        "new_homes_10min_bart": 69,
+        "new_homes_in_noise_contour": 29,
+        "new_homes_in_flood_zone": 21,
+        "pct_homes_10min_park": 88.6
+      },
+      "layouts_beating_plan_on_services_and_livability": 41,
+      "walk_network": {
+        "nodes": 34204,
+        "segments": 39664,
+        "dangles_joined": 263
+      },
+      "residents_2020_within_walk_of_bart": {
+        "5_min": 423,
+        "10_min": 2806,
+        "15_min": 7413
+      }
+    },
+    "versions": {
+      "python": "3.13.16",
+      "platform": "Linux",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "shapely": "2.1.2",
+      "pyproj": "3.8.0",
+      "pyogrio": "0.13.0",
+      "geopandas": "1.2.0",
+      "pymoo": "0.6.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "data": "frozen snapshots (site_osm.json + 15 files in data/raw)",
+    "recorded": "2026-10-12 09:10",
+    "reason": "first run with this mode"
+  },
+  "quick_seed7": {
+    "results": {
+      "grid_classes": {
+        "Existing housing": 1010,
+        "Existing park": 96,
+        "Existing school / public service": 2,
+        "Outside site (unchanged)": 703,
+        "Redevelopable site": 269,
+        "Road / rail / creek setback / floodway": 575
+      },
+      "manual_edit_cells": 0,
+      "pareto_solutions": 41,
+      "representatives": {
+        "balanced": {
+          "solution_id": 28,
+          "job_walk_ft": 2084.0,
+          "services_walk_ft": 2595.0,
+          "livability": 1167.8,
+          "new_homes_walk_to_bart_ft": 1032.0,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 73,
+          "new_homes_in_noise_contour": 44,
+          "new_homes_in_flood_zone": 41,
+          "pct_homes_10min_park": 95.8
+        },
+        "best_job_commute": {
+          "solution_id": 23,
+          "job_walk_ft": 2080.8,
+          "services_walk_ft": 3226.5,
+          "livability": 1153.9,
+          "new_homes_walk_to_bart_ft": 1087.4,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 73,
+          "new_homes_in_noise_contour": 47,
+          "new_homes_in_flood_zone": 30,
+          "pct_homes_10min_park": 95.8
+        },
+        "best_livability": {
+          "solution_id": 8,
+          "job_walk_ft": 2121.6,
+          "services_walk_ft": 2626.7,
+          "livability": 1174.5,
+          "new_homes_walk_to_bart_ft": 1182.6,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 71,
+          "new_homes_in_noise_contour": 42,
+          "new_homes_in_flood_zone": 31,
+          "pct_homes_10min_park": 96
+        },
+        "best_transit_access": {
+          "solution_id": 32,
+          "job_walk_ft": 2088.4,
+          "services_walk_ft": 3034.2,
+          "livability": 1152.2,
+          "new_homes_walk_to_bart_ft": 935.8,
+          "new_home_cells": 73,
+          "new_homes_10min_bart": 73,
+          "new_homes_in_noise_contour": 55,
+          "new_homes_in_flood_zone": 48,
+          "pct_homes_10min_park": 95.8
+        }
+      },
+      "hypervolume_final": 0.945423,
+      "qa_counts": {
+        "GEOM_INVALID": 0,
+        "DUPLICATE_GEOM": 0,
+        "ROAD_UNDERSHOOT": 9,
+        "ROAD_DEAD_END": 68,
+        "CROSSING_NO_NODE": 0,
+        "MISSING_NAME": 7,
+        "NOT_IN_DICTIONARY": 1,
+        "LANDUSE_CONFLICT": 4,
+        "OSM_BUILDING_NO_PARCEL": 2,
+        "PARCEL_LANDUSE_MISMATCH": 1,
+        "STOP_NOT_IN_OSM": 1,
+        "STOP_NOT_IN_GTFS": 5,
+        "CREEK_OFFSET": 2,
+        "EDIT_INCOMPLETE": 0,
+        "EDIT_INVALID": 0,
+        "CELL_AMBIGUOUS": 20,
+        "ZONE_DOMAIN": 0,
+        "ZONE_OVERLAP": 0,
+        "ZONE_OUTSIDE_SITE": 0,
+        "SITE_GAP": 0,
+        "AREA_RECONCILE": 0,
+        "FOOTPRINT_ZONE": 0
+      },
+      "city_plan": {
+        "job_walk_ft": 2022.1,
+        "services_walk_ft": 2873.2,
+        "livability": 1138.8,
+        "new_homes_walk_to_bart_ft": 1627.7,
+        "new_home_cells": 75,
+        "new_homes_10min_bart": 69,
+        "new_homes_in_noise_contour": 29,
+        "new_homes_in_flood_zone": 21,
+        "pct_homes_10min_park": 88.6
+      },
+      "layouts_beating_plan_on_services_and_livability": 35,
+      "walk_network": {
+        "nodes": 34204,
+        "segments": 39664,
+        "dangles_joined": 263
+      },
+      "residents_2020_within_walk_of_bart": {
+        "5_min": 423,
+        "10_min": 2806,
+        "15_min": 7413
+      }
+    },
+    "versions": {
+      "python": "3.13.16",
+      "platform": "Linux",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "shapely": "2.1.2",
+      "pyproj": "3.8.0",
+      "pyogrio": "0.13.0",
+      "geopandas": "1.2.0",
+      "pymoo": "0.6.2",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "data": "frozen snapshots (site_osm.json + 15 files in data/raw)",
+    "recorded": "2026-10-12 09:27",
+    "reason": "first run with this mode"
+  }
+}

@@ -1,0 +1,13 @@
+# Python packages for the Berryessa land use pipeline (QGIS itself is installed separately).
+# Reference results in expected_results.json were recorded with the exact versions in brackets.
+# setup_env.bat does not upgrade packages you already have, so an existing .venv keeps matching.
+numpy>=1.26          # [2.5.3]
+pandas>=2.1          # [3.0.6]
+shapely>=2.0         # [2.1.2]
+pyproj>=3.6          # [3.8.0]
+pyogrio>=0.9         # [0.13.0]
+geopandas>=1.0       # [1.2.0]
+pymoo>=0.6.1         # [0.6.2]
+scipy>=1.11          # [1.18.1] walking distances (Dijkstra) and spatial indexes
+matplotlib>=3.8      # [3.11.2]
+pypdf>=4.0           # optional: merges the map series into one PDF

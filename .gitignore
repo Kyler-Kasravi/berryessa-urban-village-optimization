@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+berryessa.gpkg
+berryessa_map.qgz
+maps/
+webmap/index.html
+webmap/fragment.html
+demo_report.html
+run_summary.json
+qa_summary.csv
+scenarios.csv
