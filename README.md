@@ -8,7 +8,7 @@ I wanted to find if the optimizer was capable of performaing well on real plots 
 
 ## Results (seed 7, 300 generations)
 
-The optimizer found 47 trade-off layouts. 41 of them beat the City's plan on both walk to schools/services and livability, and all 47 shorten the walk from new homes to BART. The plan still does better on walks to jobs and keeps more new homes out of the flood zone and rail noise contour. 
+The optimizer found 47 trade-off layouts. 41 of them beat the City's plan on both walk to schools/services and livability, and all 47 shorten the walk from new homes to BART. The plan still does better on walks to jobs and keeps more new homes out of the flood zone and rail noise region. 
 
 | Metric | Balanced layout | Best of 47 | City's plan |
 |---|---|---|---|
@@ -21,16 +21,16 @@ Four other random seeds gave similar results (35 to 46 layouts beat the plan eac
 
 The optimized layouts score better than the City's plan on the objective functions I wrote: walking distance to schools and services, livability, and walking distance from new homes to BART. While the results score better according to these objective functions, that doesn't mean a better plan, and I'm not claiming to have found one. My model measures a few things that fit on a 120 ft grid with one use per cell. The City's plan also has to take into account what my model leaves out, such as building heights and densities, cost and market demand, streets and utilities, flood risk, noise mitigation, and community input. The comparison also rests on my own choices. For example, I count the plan's Urban Village land as commercial, which tilts it toward jobs and away from housing.
 
-This is a proof of concept and a passion project. I wanted to see whether the optimizer from my capstone could work on real land, and whether it would find arrangements worth a closer look.
+This is a proof of concept and a passion project. I wanted to see whether the optimizer from my capstone could work on real land, and whether it would find interesting arrangements.
 ## Method
 
-- **Data:** City of San Jose (Urban Village boundary, General Plan 2040, parcels, zoning, streets, creeks, noise contours, parks, schools), FEMA flood zones, 2020 Census blocks, Caltrans GTFS stops, and OpenStreetMap. Every layer is frozen and listed in `data/manifest.csv` with source, date, CRS and license.
-- **Grid:** 59 x 45 cells of 120 ft in EPSG:2227. Roads, rail, creek setbacks and the floodway are unbuildable; existing homes, parks and schools stay fixed; 269 redevelopable cells (parking, the flea market, vacant or under 30% built).
-- **Rules as geometry:** creek setback, FEMA floodway, 1% flood zone and rail noise contour.
-- **Walking distances:** along real streets and paths (Dijkstra on a 34,204-node network), not straight lines.
-- **Optimization:** NSGA-III (pymoo) with my cluster-growth encoding and four objectives: walk to jobs, walk to services, livability, and walk from new homes to BART. The City's plan is scored with the same functions.
-- **QA/QC:** 22 automated checks, including OSM vs. City parcels, General Plan, GTFS stops and creeks.
-- **Outputs:** one GeoPackage with styled layers, a QGIS project with a nine-map series and QA error atlas, and a Leaflet web map.
+**Data:** City of San Jose (Urban Village boundary, General Plan 2040, parcels, zoning, streets, creeks, noise contours, parks, schools), FEMA flood zones, 2020 Census blocks, Caltrans GTFS stops, and OpenStreetMap. Every layer is frozen and listed in `data/manifest.csv` with source, date, CRS and license.
+**Grid:** 59 x 45 cells of 120 ft in EPSG:2227. Roads, rail, creek setbacks and the floodway are unbuildable; existing homes, parks and schools stay fixed; 269 redevelopable cells (parking, the flea market, vacant or under 30% built).
+**Rules as geometry:** creek setback, FEMA floodway, 1% flood zone and rail noise contour.
+**Walking distances:** along real streets and paths (Dijkstra on a 34,204-node network), not straight lines.
+**Optimization:** NSGA-III (pymoo) with my cluster-growth encoding and four objectives: walk to jobs, walk to services, livability, and walk from new homes to BART. The City's plan is scored with the same functions.
+**QA/QC:** 22 automated checks, including OSM vs. City parcels, General Plan, GTFS stops and creeks.
+**Outputs:** one GeoPackage with styled layers, a QGIS project with a nine-map series and QA error atlas, and a Leaflet web map.
 
 ## Data flow
 
