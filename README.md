@@ -8,7 +8,7 @@ I wanted to find if the optimizer was capable of performaing well on real plots 
 
 ## Results (seed 7, 300 generations)
 
-The optimizer found 47 trade-off layouts. 41 of them beat the City's plan on both walk to schools/services and livability, and all 47 shorten the walk from new homes to BART. The plan still does better on walks to jobs and keeps more new homes out of the flood zone and rail noise contour. T
+The optimizer found 47 trade-off layouts. 41 of them beat the City's plan on both walk to schools/services and livability, and all 47 shorten the walk from new homes to BART. The plan still does better on walks to jobs and keeps more new homes out of the flood zone and rail noise contour. 
 
 | Metric | Balanced layout | Best of 47 | City's plan |
 |---|---|---|---|
